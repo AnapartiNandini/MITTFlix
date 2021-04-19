@@ -3,36 +3,360 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>MITTFlix</title>
   </head>
-  <body>    
+  <body>
     <div id="root">
       <header class="header">
-        <a href="/"
+        <a href="index.html"
           ><img
             src="https://fontmeme.com/permalink/190707/fd4735271a0d997cbe19a04408c896fc.png"
             alt="netflix-font"
             border="0"
         /></a>
-        <div id="navigation" class="navigation">
-          <nav>
-            <ul>
-              <li><a href="/browse">Browse</a></li>
-              <li><a href="/myList">My List</a></li>
-            </ul>
-          </nav>
-        </div>
         <form id="search" class="search">
           <input type="search" placeholder="Search for a title..." value="" />
-          <div class="searchResults"></div>
         </form>
-      </header>        
+      </header>
+      <div class="titleList">
+        <div class="title">
+          <h1>Todays Most Popular Movies</h1>
+          <div class="titles-wrapper">
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//7prYzufdIOy1KCTZKVWpjBFqqNr.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Raya and the Last Dragon</div>
+                <div class="rating">8.7/10</div>
+                <div class="plot">
+                  Long ago, in the fantasy world of Kumandra, humans and dragons
+                  lived together in harmony. But when an evil force threatened
+                  the land, the dragons sacrificed themselves to save humanity.
+                  Now, 500 years later, that same evil has returned and it's up
+                  to a lone warrior, Raya, to track down the legendary last
+                  dragon to restore the fractured land and its divided people.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//fev8UFNFFYsD5q7AcYS8LyTzqwl.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Tom &amp; Jerry</div>
+                <div class="rating">7.8/10</div>
+                <div class="plot">
+                  Tom the cat and Jerry the mouse get kicked out of their home
+                  and relocate to a fancy New York hotel, where a scrappy
+                  employee named Kayla will lose her job if she can't evict
+                  Jerry before a high-class wedding at the hotel. Her solution?
+                  Hiring Tom to get rid of the pesky mouse.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//8tNX8s3j1O0eqilOQkuroRLyOZA.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Monster Hunter</div>
+                <div class="rating">7.3/10</div>
+                <div class="plot">
+                  A portal transports Cpt. Artemis and an elite unit of soldiers
+                  to a strange world where powerful monsters rule with deadly
+                  ferocity. Faced with relentless danger, the team encounters a
+                  mysterious hunter who may be their only hope to find a way
+                  home.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//vKzbIoHhk1z9DWYi8kyFe9Gg0HF.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Coming 2 America</div>
+                <div class="rating">7.1/10</div>
+                <div class="plot">
+                  Prince Akeem Joffer is set to become King of Zamunda when he
+                  discovers he has a son he never knew about in America - a
+                  street savvy Queens native named Lavelle. Honoring his royal
+                  father's dying wish to groom this son as the crown prince,
+                  Akeem and Semmi set off to America once again.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//srYya1ZlI97Au4jUYAktDe3avyA.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Wonder Woman 1984</div>
+                <div class="rating">6.9/10</div>
+                <div class="plot">
+                  A botched store robbery places Wonder Woman in a global battle
+                  against a powerful and mysterious ancient force that puts her
+                  powers in jeopardy.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//drulhSX7P5TQlEMQZ3JoXKSDEfz.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Space Sweepers</div>
+                <div class="rating">7.4/10</div>
+                <div class="plot">
+                  When the crew of a space junk collector ship called The
+                  Victory discovers a humanoid robot named Dorothy that's known
+                  to be a weapon of mass destruction, they get involved in a
+                  risky business deal which puts their lives at stake.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//7KL4yJ4JsbtS1BNRilUApLvMnc5.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Red Dot</div>
+                <div class="rating">6.5/10</div>
+                <div class="plot">
+                  On a hiking trip to rekindle their marriage, a couple find
+                  themselves fleeing for their lives in the unforgiving
+                  wilderness from an unknown shooter.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//lOSdUkGQmbAl5JQ3QoHqBZUbZhC.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Outside the Wire</div>
+                <div class="rating">6.5/10</div>
+                <div class="plot">
+                  In the near future, a drone pilot is sent into a deadly
+                  militarized zone and must work with an android officer to
+                  locate a doomsday device.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//vfuzELmhBjBTswXj2Vqxnu5ge4g.jpg"
+              />
+              <div class="overlay">
+                <div class="title">The Little Things</div>
+                <div class="rating">6.5/10</div>
+                <div class="plot">
+                  Deputy Sheriff Joe "Deke" Deacon joins forces with Sgt. Jim
+                  Baxter to search for a serial killer who's terrorizing Los
+                  Angeles. As they track the culprit, Baxter is unaware that the
+                  investigation is dredging up echoes of Deke's past, uncovering
+                  disturbing secrets that could threaten more than his case.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//6TPZSJ06OEXeelx1U1VIAt0j9Ry.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Below Zero</div>
+                <div class="rating">6.5/10</div>
+                <div class="plot">
+                  When a prisoner transfer van is attacked, the cop in charge
+                  must fight those inside and outside while dealing with a
+                  silent foe: the icy temperatures.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//fRrpOILyXuWaWLmqF7kXeMVwITQ.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Black Water: Abyss</div>
+                <div class="rating">5.1/10</div>
+                <div class="plot">
+                  An adventure-loving couple convince their friends to explore a
+                  remote, uncharted cave system in the forests of Northern
+                  Australia. With a tropical storm approaching, they abseil into
+                  the mouth of the cave, but when the caves start to flood,
+                  tensions rise as oxygen levels fall and the friends find
+                  themselves trapped. Unknown to them, the storm has also
+                  brought in a pack of dangerous and hungry crocodiles.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//nz8xWrTKZzA5A7FgxaM4kfAoO1W.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Breach</div>
+                <div class="rating">4.5/10</div>
+                <div class="plot">
+                  A hardened mechanic must stay awake and maintain an
+                  interstellar ark fleeing the dying planet Earth with a few
+                  thousand lucky souls on board... the last of humanity.
+                  Unfortunately, humans are not the only passengers. A
+                  shapeshifting alien creature has taken residence, its only
+                  goal is to kill as many people as possible. The crew must
+                  think quickly to stop this menace before it destroys mankind.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//jeAQdDX9nguP6YOX6QSWKDPkbBo.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Jiu Jitsu</div>
+                <div class="rating">5.3/10</div>
+                <div class="plot">
+                  Every six years, an ancient order of jiu-jitsu fighters joins
+                  forces to battle a vicious race of alien invaders. But when a
+                  celebrated war hero goes down in defeat, the fate of the
+                  planet and mankind hangs in the balance.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//3ombg55JQiIpoPnXYb2oYdr6DtP.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Skylines</div>
+                <div class="rating">6.1/10</div>
+                <div class="plot">
+                  When a virus threatens to turn the now earth-dwelling friendly
+                  alien hybrids against humans, Captain Rose Corley must lead a
+                  team of elite mercenaries on a mission to the alien world in
+                  order to save what's left of humanity.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//yR27bZPIkNhpGEIP3jKV2EifTgo.jpg"
+              />
+              <div class="overlay">
+                <div class="title">
+                  Miraculous World: New York, United HeroeZ
+                </div>
+                <div class="rating">8.5/10</div>
+                <div class="plot">
+                  During a school field trip, Ladybug and Cat Noir meet the
+                  American superheroes, whom they have to save from an
+                  akumatised super-villain. They discover that Miraculous exist
+                  in the United States too.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//kf456ZqeC45XTvo6W9pW5clYKfQ.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Soul</div>
+                <div class="rating">8.3/10</div>
+                <div class="plot">
+                  Joe Gardner is a middle school teacher with a love for jazz
+                  music. After a successful gig at the Half Note Club, he
+                  suddenly gets into an accident that separates his soul from
+                  his body and is transported to the You Seminar, a center in
+                  which souls develop and gain passions before being transported
+                  to a newborn child. Joe must enlist help from the other
+                  souls-in-training, like 22, a soul who has spent eons in the
+                  You Seminar, in order to get back to Earth.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//fX8e94MEWSuTJExndVYxKsmA4Hw.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Vanguard</div>
+                <div class="rating">6.4/10</div>
+                <div class="plot">
+                  Covert security company Vanguard is the last hope of survival
+                  for an accountant after he is targeted by the world's
+                  deadliest mercenary organization.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//psTz3J2QXVKTQCGrPDFuC4kAOLb.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Scooby-Doo! The Sword and the Scoob</div>
+                <div class="rating">7.6/10</div>
+                <div class="plot">
+                  An evil sorceress transports the gang back to the age of
+                  chivalrous knights, spell-casting wizards, and fire-breathing
+                  dragons.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//9xeEGUZjgiKlI69jwIOi0hjKUIk.jpg"
+              />
+              <div class="overlay">
+                <div class="title">
+                  Mortal Kombat Legends: Scorpion's Revenge
+                </div>
+                <div class="rating">8.4/10</div>
+                <div class="plot">
+                  After the vicious slaughter of his family by stone-cold
+                  mercenary Sub-Zero, Hanzo Hasashi is exiled to the torturous
+                  Netherrealm. There, in exchange for his servitude to the
+                  sinister Quan Chi, he's given a chance to avenge his family -
+                  and is resurrected as Scorpion, a lost soul bent on revenge.
+                  Back on Earthrealm, Lord Raiden gathers a team of elite
+                  warriors - Shaolin monk Liu Kang, Special Forces officer Sonya
+                  Blade and action star Johnny Cage - an unlikely band of heroes
+                  with one chance to save humanity. To do this, they must defeat
+                  Shang Tsung's horde of Outworld gladiators and reign over the
+                  Mortal Kombat tournament.
+                </div>
+              </div>
+            </div>
+            <div class="movie">
+              <img
+                src="https://image.tmdb.org/t/p/w500//h9DIlghaiTxbQbt1FIwKNbQvEL.jpg"
+              />
+              <div class="overlay">
+                <div class="title">Ashfall</div>
+                <div class="rating">6.6/10</div>
+                <div class="plot">
+                  Stagnant since 1903, at an elevation of 9000', a volcano
+                  erupts on the mythical and majestic Baekdu Mountain.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <button id="previous"><i class="fa fa-chevron-left"></i>Previous Page</button>
+        <button id="next">Next Page<i class="fa fa-chevron-right"></i></button>
+      </div>
     </div>
   </body>
 </html>

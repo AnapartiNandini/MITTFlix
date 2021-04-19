@@ -50,7 +50,7 @@ p {
   margin: 20px 0;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 10px 10px;
 }
 
@@ -133,7 +133,6 @@ p {
   margin-top: 20px;
 }
 
-
 .movie {
   overflow: hidden;
   min-width: 200px;
@@ -205,54 +204,21 @@ p {
   opacity: 1;
 }
 
-.movie:hover .listToggle {
-  opacity: 1;
-}
 
-.listToggle {
-	--size: 32px;
-	border: 2px solid rgba(255,255,255, .2);
-	width: var(--size);
-	height: var(--size);
-	font-size: var(--size) / 2;
-	border-radius: var(--size);
-	overflow: hidden;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	opacity: 0;
-}
-
-.listToggle:hover {
-  border: 2px solid var(--white);
-}
-
-.listToggle:hover div {
-  top: -32px;
-}
-
-.listToggle[data-toggled="true"] {
-  background: var(--red);
-  border: 2px solid var(--red);
-}
-
-.listToggle[data-toggled="true"] div {
-  top: -32px;
-}
-
-.listToggle div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 32px * 2;
-  width: 32px;
-  transition: .125s ease;
-}
-.listToggle div i {
+.pagination {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 32px;
-  width: 32px;
+  justify-content: space-evenly;
 }
 
+.pagination i {
+  padding: 0 15px;
+}
+
+.pagination button {
+  background-color: unset;
+  border: 0;
+  margin-bottom: 20px;
+  color: #dc1a28;
+  font-size: 19px;
+  cursor: pointer;
+}
